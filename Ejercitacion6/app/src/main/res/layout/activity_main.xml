@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿QUIEN GANARA EL TRONO?"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:background="#000"
+        android:layout_weight="0.1">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presiona el boton y enterate"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:background="#000"
+        android:layout_weight="0.1"
+        android:textSize="20sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/activityMain_imageView_imagenRey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/activityMain_textView_nombreRey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descubrilo!!"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_margin="5dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/activityMain_button_descubrirRey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descubrir"
+        android:textColor="#000"
+        android:background="#2AC0A9"
+        android:layout_margin="5dp">
+    </Button>
+
+</LinearLayout>

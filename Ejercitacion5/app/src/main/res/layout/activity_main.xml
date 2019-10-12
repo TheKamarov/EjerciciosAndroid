@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/activity_main_editText_pantalla_uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/activity_main_segundo_editText_pantalla_uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/activity_main_button_pantalla_uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unir ambos textos"
+        android:background="@color/colorAccent"
+        android:layout_margin="5dp"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/activity_main_textView_pantalla_uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="5dp">
+    </TextView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/activityMain_textView_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        android:textSize="80sp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFF"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/activityMain_button_reiniciarCalculo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="AC"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_modificarPositividadONegatividadDelResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+ / -"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_divideElResultadoPorDiez"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="%"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_divideElResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="/"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_dos"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/activityMain_button_numeroSiete"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="7"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroOcho"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="8"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroDiez"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="9"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_multiplicaElResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#fff"
+            android:text="*"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_dos"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/activityMain_button_numeroCuatro"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroCinco"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="5"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroSeis"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="6"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_restarElResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:background="@drawable/boton_redondo_dos"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/activityMain_button_numeroUno"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroDos"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="2"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroTres"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_sumarElResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_dos"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/activityMain_button_numeroCero"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_cuatro"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/activityMain_button_numeroDecimal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="."
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_tres"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+
+        <Button
+            android:id="@+id/activityMain_button_mostrarElResultado"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="="
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:background="@drawable/boton_redondo_dos"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

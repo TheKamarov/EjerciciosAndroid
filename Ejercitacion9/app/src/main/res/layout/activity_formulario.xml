@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity"
+    android:background="#D967EA">
+
+    <TextView
+        android:id="@+id/formulario_TextView_completar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completar el formulario"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <TextView
+    android:id="@+id/formulario_TextView_nombre"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/formulario_TextView_completar"
+    android:text="Nombre:"
+    android:layout_margin="15dp"
+    android:textSize="25sp"
+    >
+</TextView>
+
+    <EditText
+        android:id="@+id/formulario_EditText_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formulario_TextView_nombre"
+        android:layout_toRightOf="@+id/formulario_TextView_nombre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/formulario_TextView_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_nombre"
+        android:text="Apellido:"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/formulario_EditText_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formulario_TextView_apellido"
+        android:layout_toRightOf="@+id/formulario_TextView_apellido"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/formulario_TextView_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_apellido"
+        android:text="Edad:"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/formulario_EditText_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formulario_TextView_edad"
+        android:layout_toRightOf="@+id/formulario_TextView_edad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:inputType="number">
+    </EditText>
+
+    <TextView
+        android:id="@+id/formulario_TextView_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_edad"
+        android:text="Carrera:"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/formulario_EditText_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formulario_TextView_carrera"
+        android:layout_toRightOf="@+id/formulario_TextView_carrera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/formulario_TextView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_carrera"
+        android:text="Email:"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/formulario_EditText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formulario_TextView_email"
+        android:layout_toRightOf="@+id/formulario_TextView_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:id="@+id/formulario_TextView_recibirInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deseo recibir mail informandome sobre los siguientes eventos:"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/formulario_TextView_email"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/formulario_CheckBox_meetups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_recibirInformacion"
+        android:layout_centerHorizontal="true"
+        android:text="Meetups"
+        android:textSize="20dp"
+        >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/formulario_CheckBox_torneos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_recibirInformacion"
+        android:layout_toLeftOf="@+id/formulario_CheckBox_meetups"
+        android:text="Torneos"
+        android:textSize="20dp"
+        >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/formulario_CheckBox_Asados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_TextView_recibirInformacion"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/formulario_CheckBox_meetups"
+        android:text="Asados"
+        android:textSize="20dp"
+        >
+    </CheckBox>
+
+    <Button
+        android:id="@+id/formulario_Button_Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario_CheckBox_meetups"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Enviar">
+    </Button>
+</RelativeLayout>

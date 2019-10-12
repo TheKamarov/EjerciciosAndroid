@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/RelativeLayout_Sender"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/activityMain_TextView_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/activityMain_EditText_Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/activityMain_TextView_Nombre"
+        android:layout_alignBottom="@+id/activityMain_TextView_Nombre"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/activityMain_TextView_Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/activityMain_TextView_Nombre">
+    </TextView>
+
+    <EditText
+        android:id="@+id/activityMain_EditText_Apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/activityMain_TextView_Apellido"
+        android:layout_alignBottom="@+id/activityMain_TextView_Apellido"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/activityMain_TextView_Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/activityMain_TextView_Apellido">
+    </TextView>
+
+    <EditText
+        android:id="@+id/activityMain_EditText_Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/activityMain_TextView_Edad"
+        android:layout_alignBottom="@+id/activityMain_TextView_Edad"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/activityMain_Button_Mandar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityMain_TextView_Edad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="MANDAR"
+        android:background="@color/colorAccent">
+    </Button>
+
+</RelativeLayout>

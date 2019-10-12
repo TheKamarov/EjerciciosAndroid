@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.digitalhouse.floatbuttonbase.MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENSAJE"
+        android:textSize="40sp"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/santaFragment_textView_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGALOS"
+        android:textSize="40sp"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/santaFragment_textView_regalos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:gravity="center">
+    </TextView>
+
+</LinearLayout>

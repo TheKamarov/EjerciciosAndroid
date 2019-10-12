@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarseActivity"
+    android:background="@color/colorSecundary"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragmentregistrarse"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/registrarseActivity_editText_nombre"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_main"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/registrarseActivity_editText_apellido"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_main"
+            android:layout_toRightOf="@id/registrarseActivity_editText_nombre"
+            android:layout_marginStart="5dp"
+            android:hint="Apellido"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/registrarseActivity_editText_email"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/registrarseActivity_editText_apellido"
+            android:layout_alignLeft="@id/registrarseActivity_editText_nombre"
+            android:background="@drawable/edittext_main"
+            android:layout_below="@id/registrarseActivity_editText_apellido"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/registrarseActivity_editText_password"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/registrarseActivity_editText_apellido"
+            android:layout_alignLeft="@id/registrarseActivity_editText_nombre"
+            android:background="@drawable/edittext_main"
+            android:layout_below="@id/registrarseActivity_editText_email"
+            android:layout_marginTop="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/registrarseActivity_editText_ConfirmPassword"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/registrarseActivity_editText_apellido"
+            android:layout_alignLeft="@id/registrarseActivity_editText_nombre"
+            android:background="@drawable/edittext_main"
+            android:layout_below="@id/registrarseActivity_editText_password"
+            android:layout_marginTop="5dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/registrarseActivity_button_registrarse"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botones_send"
+            android:layout_below="@id/registrarseActivity_editText_ConfirmPassword"
+            android:text="Registrarse"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_alignRight="@id/registrarseActivity_editText_apellido"
+            android:layout_alignLeft="@id/registrarseActivity_editText_nombre"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/registrarseActivity_button_volver"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botones_send"
+            android:layout_below="@id/registrarseActivity_button_registrarse"
+            android:text="Volver"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_alignRight="@id/registrarseActivity_editText_apellido"
+            android:layout_alignLeft="@id/registrarseActivity_editText_nombre"
+            >
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
