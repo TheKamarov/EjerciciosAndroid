@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceptorActivity">
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Ingresado:"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_NombreRecibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ReceptorActivity_TextView_Nombre"
+        android:textSize="20sp"
+        tools:text="Santiago">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido Ingresado:"
+        android:textSize="20sp"
+        android:layout_below="@id/ReceptorActivity_TextView_Nombre">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_ApellidoRecibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ReceptorActivity_TextView_Apellido"
+        android:layout_below="@id/ReceptorActivity_TextView_NombreRecibido"
+        android:textSize="20sp"
+        tools:text="Gonzalez Fernandez">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad Ingresada:"
+        android:textSize="20sp"
+        android:layout_below="@id/ReceptorActivity_TextView_Apellido">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReceptorActivity_TextView_EdadRecibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ReceptorActivity_TextView_Edad"
+        android:layout_below="@id/ReceptorActivity_TextView_ApellidoRecibido"
+        android:textSize="20sp"
+        tools:text="16">
+    </TextView>
+
+</RelativeLayout>

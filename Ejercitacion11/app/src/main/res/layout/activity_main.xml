@@ -1,70 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
-    android:orientation="vertical"
-    tools:context="com.example.digitalhouse.floatbuttonbase.MainActivity">
+    tools:context=".MainActivity">
 
-
-
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/MainActivity_FrameLayout_ContenedorDeFragments"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+    </FrameLayout>
 
-        <ImageView
-            android:id="@+id/mainActivity_imageView_santa"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/santa" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/mainActivity_textInputLayout_mensaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/mainActivity_textInputEditText_mensaje"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_margin="20dp"
-                android:layout_marginTop="2dp"
-                android:hint="Mensaje" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/mainActivity_textInputLayout_regalos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/mainActivity_textInputEditText_regalos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:hint="Regalos (opcional)" />
-        </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/mainActivity_floatingActionButton_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_anchorGravity="bottom|end"
-        android:src="@drawable/iconsend"
-        android:layout_marginRight="10dp"
-        app:layout_anchor="@id/mainActivity_imageView_santa"/>
-
-    <LinearLayout
-        android:id="@+id/contenedorDeFragments"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-    </LinearLayout>
-
-</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

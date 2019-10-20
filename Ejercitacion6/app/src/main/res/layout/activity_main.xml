@@ -1,60 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/MainActivity_LinearLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="¿QUIEN GANARA EL TRONO?"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:textColor="#FFF"
-        android:background="#000"
-        android:layout_weight="0.1">
-    </TextView>
+    <!--Le agrego un LinearLayout dentro de otro como hijo para poder agrupar ciertos componentes-->
+    <!--El weight es el peso que tiene el componente dentro de la activity, es el espacio que ocupa-->
 
-    <TextView
+    <LinearLayout
+        android:layout_weight="0.08"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Presiona el boton y enterate"
-        android:gravity="center"
-        android:textColor="#FFF"
+        android:layout_height="0dp"
         android:background="#000"
-        android:layout_weight="0.1"
-        android:textSize="20sp">
-    </TextView>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUIEN GANARA EL TRONO?"
+            android:gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presiona el boton y enterate"
+            android:textColor="#FFF"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
 
     <ImageView
-        android:id="@+id/activityMain_imageView_imagenRey"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.4">
+        android:id="@+id/MainActivity_ImageView_GanadorDelTrono"
+        android:layout_weight="0.13"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:background="@drawable/nightking"
+        android:layout_margin="40dp">
     </ImageView>
 
     <TextView
-        android:id="@+id/activityMain_textView_nombreRey"
+        android:id="@+id/MainActivity_TextView_NombreDelGanadorDelTrono"
+        android:layout_weight="0.02"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Descubrilo!!"
-        android:textColor="#000"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:layout_margin="5dp">
+        android:layout_height="0dp"
+        tools:text="Night King"
+        android:gravity="center_horizontal"
+        android:textSize="20sp">
     </TextView>
 
     <Button
-        android:id="@+id/activityMain_button_descubrirRey"
+        android:id="@+id/MainActivity_Button_Descubrir"
+        android:layout_weight="0.03"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="Descubrir"
-        android:textColor="#000"
-        android:background="#2AC0A9"
-        android:layout_margin="5dp">
+        android:background="@color/colorPrimary">
     </Button>
 
 </LinearLayout>

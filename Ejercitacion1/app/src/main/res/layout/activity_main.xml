@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/MainActivity_LinearLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <!--Al crear IDs es una buena practica colocar como minimo que activity es y que objeto es
+        Ejemplo : @+id/LUGAR_OBJETO_FUNCIONALIDAD   /   @+id/MainActivity_Button_MostrarNombre-->
+
+    <!--Cuando se crea un LinearLayout siempre se le debe poner la orientacion (ORIENTATION),
+        puede ser "Vertical" o "Horizontal" -->
+
+    <!--Todos los atributos de XML deben tener un "width" y un "height"-->
+
+    <!--wrap_content ocupa lo minimo posible de lo que tenga adentro
+        match_parent ocupa toda la pantalla-->
+
+    <!--TextSize: -Se usa para modificar el tamano de la letra
+                  -SP es un tamano modificable por el sistema operativo , por ejemplo si el user
+                   tiene alguna configuracion de ver mas grande las letras
+                  -DP es un tamano fijo que no se puede modificar por el user-->
+
+    <!--tools sirve para mostrar algo solo en la Preview-->
+
+    <!--EditText se utiliza para que el usuario ingrese un texto-->
+
+    <!--Margin sirve para darle un margen a el objeto que se le ha puesto ese atributo-->
+
+    <!--Button es un boton que sirve para generar una accion
+        el text siempre va estar en mayuscula al menos que pongas un atributo que sirve para cambiar
+        eso-->
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/MainActivity_TextView_Nombre"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:textSize="20dp"
-        android:layout_margin="5dp">
+        android:textSize="20sp">
     </TextView>
 
     <EditText
-        android:id="@+id/activity_main_editText_pantalla_uno"
+        android:id="@+id/MainActivity_EditText_Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        tools:text="Santiago"
+        >
     </EditText>
 
     <Button
-        android:id="@+id/activity_main_button_pantalla_uno"
+        android:id="@+id/MainActivity_Button_EnviarNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:text="ACEPTAR">
     </Button>
 

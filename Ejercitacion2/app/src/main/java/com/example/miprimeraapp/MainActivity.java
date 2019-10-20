@@ -13,47 +13,72 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText textoObtenido;
-    private Button botonAceptar;
-    private LinearLayout linearLayout;
-    private TextView titulo;
-    private Button botonCambiarDeColorTextView;
-    private Button botonCambiarContenidoTextView;
+    //creo los objeto que he puesto en el xml para utilizarlos
+
+    //Una buena practica es que siempre que crees un objeto pogas de nombre el tipo de objeto y
+    //luego la funcionalidad, Ejemplo: buttonEnviarNombre
+
+    private Button buttonNombre;
+    private Button buttonCambiarColorTextView;
+    private Button buttonCambiarContenidoTextView;
+    private EditText editTextNombre;
+    private LinearLayout linearLayoutMainActivity;
+    private TextView textViewNombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textoObtenido = findViewById(R.id.activity_main_editText_pantalla_uno);
-        botonAceptar = findViewById(R.id.activity_main_button_pantalla_uno);
-        linearLayout = findViewById(R.id.activity_main_linearLayout_pantalla_uno);
-        titulo = findViewById(R.id.activity_main_textView_pantalla_uno);
-        botonCambiarDeColorTextView = findViewById(R.id.activity_main_button_dos_pantalla_uno);
-        botonCambiarContenidoTextView = findViewById(R.id.activity_main_button_tres_pantalla_uno);
+        //Luego de crear los objetos hay que encontrarlos con los del XML por el ID
 
-        botonAceptar.setOnClickListener(new View.OnClickListener() {
+        buttonNombre = findViewById(R.id.MainActivity_Button_EnviarNombre);
+        buttonCambiarColorTextView = findViewById(R.id.MainActivity_Button_CambiarColorTextView);
+        buttonCambiarContenidoTextView = findViewById(R.id.MainActivity_Button_CambiarContenidoTextView);
+        editTextNombre = findViewById(R.id.MainActivity_EditText_Nombre);
+        linearLayoutMainActivity = findViewById(R.id.MainActivity_LinearLayout);
+        textViewNombre = findViewById(R.id.MainActivity_TextView_Nombre);
+
+        //Le doy al boton la accion que tiene que hacer al ser clikeado
+
+        buttonNombre.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,textoObtenido.getText().toString(),Toast.LENGTH_LONG).show();
-                linearLayout.setBackgroundColor(Color.rgb(150,54,53));
+            public void onClick(View view) {
+                //Creo un String para que contenga lo que pongan dentro de el editText
+
+                String stringContenidoDelEditTextNombre = editTextNombre.getText().toString();
+
+                //El fondo del LinearLayout va a cambiar
+
+                linearLayoutMainActivity.setBackgroundColor(Color.rgb(100,50,200));
+
+                //Creo un tost, que es el que muestra por pantalla un string , en este caso muestra
+                //el contenido del string anteriormente creado
+                //Hay que tener en cuanta que si o si para que se muestre al final se debe poner .show()
+
+                Toast.makeText(MainActivity.this, stringContenidoDelEditTextNombre, Toast.LENGTH_SHORT).show();
             }
         });
 
-        botonCambiarDeColorTextView.setOnClickListener(new View.OnClickListener() {
+        buttonCambiarColorTextView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                titulo.setTextColor(Color.rgb(50,50,100));
+            public void onClick(View view) {
+
+                //Cambio el color del TextView
+
+                textViewNombre.setTextColor(Color.rgb(0,245,0));
             }
         });
 
-        botonCambiarContenidoTextView.setOnClickListener(new View.OnClickListener() {
+        buttonCambiarContenidoTextView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                titulo.setText("Presionaste el boton");
+            public void onClick(View view) {
+                //Cambio el contenido del TextView con el que pasan por el EditText
+
+                String stringContenidoDelEditTextNombre = editTextNombre.getText().toString();
+
+                textViewNombre.setText(stringContenidoDelEditTextNombre);
             }
         });
-
-
     }
 }
